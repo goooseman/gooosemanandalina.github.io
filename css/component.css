@@ -221,8 +221,8 @@ body {
 .page-right {
 	left: 25%;
 	outline: 5px solid #ecf0f1; /* avoid rounding gaps */
-	background: #ecf0f1;
-	color: #97a8b2;
+	background: #FF3D7F;
+	color: #fff;
 	-webkit-transform: translateX(100%);
 	transform: translateX(100%);
 }
@@ -230,7 +230,7 @@ body {
 .page-left {
 	left: 0;
 	outline: 5px solid #34495e; /* avoid rounding gaps */
-	background: #34495e;
+	background: #47a3da;
 	color: #fff;
 	text-align: right;
 	-webkit-transform: translateX(-100%);
@@ -247,7 +247,7 @@ body {
 }
 
 .page-inner h2 {
-	margin: 0 0 5px 0;
+	margin: 0 0 0 0;
 	font-weight: 300;
 	font-size: 2.4em;
 }
