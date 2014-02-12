@@ -17,6 +17,9 @@ body {
 .open-left #timer, .open-right #timer {
 	display: none;
 }
+.addthis_32x32_style .at15nc.at300bs {
+	border-radius: 20px;
+}
 #timer {
   position: absolute;
   margin: auto;
