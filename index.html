@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Гусман и Алина</title>
+		<title>Саша и Алина</title>
 		<meta name="description" content="Blueprint: Split Layout" />
 		<meta name="keywords" content="website template, layout, css3, transition, effect, split, dual, two sides, portfolio" />
 		<meta name="author" content="Codrops" />
@@ -12,23 +12,33 @@
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<script src="js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+
+		<script src="js/moment.js"></script>
+		<script src="js/application.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<div id="splitlayout" class="splitlayout">
 				<div class="intro">
+					<div id="timer">
+						<div id="timer-overlay">
+							<h1 id="timeTogether"></h1>
+						  <h1 id="timeSinceWedding"></h1>
+						</div>
+					  
+					</div>	
 					<div class="side side-left">
-						
 						<div class="intro-content">
-							<div class="profile"><img src="img/sasha.png" alt="profile1"></div>
-							<h1><span>Toby Blue </span><span>Web Designer</span></h1>
+							<div class="profile"><img src="img/sasha.png" alt="sasha"></div>
+							<h1><span>Александр Гусев </span><span>Муж</span></h1>
 						</div>
 						<div class="overlay"></div>
 					</div>
 					<div class="side side-right">
 						<div class="intro-content">
-							<div class="profile"><img src="img/profile2.jpg" alt="profile2"></div>
-							<h1><span>Amy White </span><span>Web Developer</span></h1>
+							<div class="profile"><img src="img/alina.png" alt="profile2"></div>
+							<h1><span>Алина Журавская </span><span>Жена</span></h1>
 						</div>
 						<div class="overlay"></div>
 					</div>
@@ -68,20 +78,13 @@
 				<div class="page page-left">
 					<div class="page-inner">
 						<section>
-							<h2>Web Design</h2>
-							<p>Scenario archetype complementary responsive script pixel sidebar sitemap keep it simple. Complementary visuals footer CSS from alan cooper delightful.  Photoshop iconography simplicity user experience affordance narrative ascenders contour.  Slab serif interstitial skeuomorphism illustrator design by committee simplicity alan cooper eye tracking.  Typography contrast mental model typesetting affordance narrative from CSS. Retina simplicity design by committee typography oblique.</p>
-							<p>Delightful ascenders contrast prototype. Ligature jakob nielsen user measure.  Ligature contrast glyph rule of thirds composition interstitial dribbble.  Mental model typography urbanized balance.  Resolution rounded corners IDEO constraints dribbble persona.  Portfolio sketch baseline 66-character line.  Usability testing mental model simplicity aspect ratio pencil type.  Usable sans-serif visualization leading prägnanz baseline pencil fireworks clarity omnigraffle.</p>
+							
 						</section>
 						<section>
-							<h2>Responsive</h2>
-							<p>Card-sorting dropdown constraints alan cooper prägnanz iconography. Stakeholder balsamiq italic vector composition ethnography CSS monospace hierarchy. Eye tracking serif persona focus group.</p>
-							<p>Typesetting artifact rounded corners eye tracking braindump drawer menu mockup dropdown measure. Jony ive eye tracking script monospace heuristic tabs sketches. Affordance eye tracking scenario usable ligature typesetting clarity responsive. Information architecture golden ratio drawer menu header affordance aspect ratio. Balsamiq slab serif IDEO cognitive dissonance kerning pixel pixel-perfect. Pixel rounded corners header workflow portfolio.</p>
-							<p>Scenario navigation complementary jony ive helvetica archetype interstitial serif front-end. Constraints pencil usability gestalt design language mockup usability testing affordance jakob nielsen.</p>
+							
 						</section>
 						<section>
-							<h2>Prototype</h2>
-							<p>Delightful ascenders contrast prototype. Ligature jakob nielsen user measure.  Ligature contrast glyph rule of thirds composition interstitial dribbble.  Mental model typography urbanized balance.  Resolution rounded corners IDEO constraints dribbble persona.  Portfolio sketch baseline 66-character line.  Usability testing mental model simplicity aspect ratio pencil type.  Usable sans-serif visualization leading prägnanz baseline pencil fireworks clarity omnigraffle.</p>
-							<p>Paper prototype urbanized headroom typography splash screen pencil modal branding. Retina omnigraffle objectified descender navigation adobe ethnography. Innovate design by committee modern hero message. Contrast user-centered color theory keep it simple visuals bevel adobe descender splash screen. From focus group accessibility sans-serif archetype pixel-perfect complementary skeuomorphism. Focus group iconography figure-ground navigation user-centered omnigraffle from.</p>
+							
 						</section>
 						<section>
 							<h2>Typography</h2>
