@@ -247,22 +247,23 @@ function ruDateString(dateArray) {
             break
 
     }
-    var dateString = dateArray[0] + yearsString + ', ' + dateArray[1] + monthsString + ', ' + dateArray[2] + daysString + ', ' + dateArray[3] + hoursString + ', ' + dateArray[4] + minutesString + ', ' + dateArray[5] + secondsString;
+    var dateString = ' ' + dateArray[0] + yearsString + ', ' + dateArray[1] + monthsString + ', ' + dateArray[2] + daysString + ', ' + dateArray[3] + hoursString + ', ' + dateArray[4] + minutesString + ', ' + dateArray[5] + secondsString;
 
+    dateString = dateString.replace(/\s[0][^,]*[,]/gm, "").replace(/[,]\s[0]\s[с][е].*$/gm, "");
     return dateString;
 }
 
 $(document).ready(function() {
     moment.lang('ru');
 
-    // Timer
+    //Timer
 
 
-    $('#timeTogether').text('Мы уже вместе ' + ruDateString(together("2010-05-15 19:00")));
-    $('#timeSinceWedding').text('Мы уже женаты ' + ruDateString(together("2013-08-09 10:00")));
+    $('#timeTogether').text('Мы уже вместе' + ruDateString(together("2010-05-15 19:00")));
+    $('#timeSinceWedding').text('Мы уже женаты' + ruDateString(together("2013-08-09 10:00")));
     setInterval(function() {
-        $('#timeTogether').text('Мы уже вместе ' + ruDateString(together("2010-05-15 19:00")));
-        $('#timeSinceWedding').text('Мы уже женаты ' + ruDateString(together("2013-08-09 10:00")));
+        $('#timeTogether').text('Мы уже вместе' + ruDateString(together("2010-05-15 19:00")));
+        $('#timeSinceWedding').text('Мы уже женаты' + ruDateString(together("2013-08-09 10:00")));
 
     }, 1000);
 
