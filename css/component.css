@@ -25,6 +25,9 @@ background-size: cover;
 .open-left #timer, .open-right #timer {
 	display: none;
 }
+.addthis_toolbox {
+	margin-top: 20px;
+}
 .addthis_32x32_style .at15nc.at300bs {
 	border-radius: 20px;
 }
