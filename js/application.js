@@ -254,22 +254,19 @@ function ruDateString(dateArray) {
 }
 
 $(document).ready(function() {
-        moment.lang('ru');
+    moment.lang('ru');
 
-        var iOS = /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
+    var iOS = /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
 
-        if (iOS) {
-            $('#play-overlay').show();
-            $('#play-overlay').click(function() {
-                $('video').get(0).play();
-                $('#play-overlay').hide();
-            });
-            $('#play-overlay'
-                ').bind("touchstart", function() {
-            $('
-                video ').get(0).play();
-            $('
-                # play - overlay ').hide();
+    if (iOS) {
+        $('#play-overlay').show();
+        $('#play-overlay').click(function() {
+            $('video').get(0).play();
+            $('#play-overlay').hide();
+        });
+        $('#play-overlay').bind("touchstart", function() {
+            $('video').get(0).play();
+            $('#play-overlay').hide();
         });
     }
 
