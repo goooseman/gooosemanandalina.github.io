@@ -256,15 +256,17 @@ function ruDateString(dateArray) {
 $(document).ready(function() {
     moment.lang('ru');
 
-
+    if ($('video').get(0).readyState != 4) {
+        alert('Not loaded!');
+    }
     $('#play-button').click(function() {
         var video = $('video').get(0);
         if (video.paused) {
             video.play();
-            $(this).text("Pause");
+            $(this).html('<i class="fa fa-pause"></i>');
         } else {
             video.pause();
-            $(this).text("Play");
+            $(this).html('<i class="fa fa-play"></i>');
         }
     });
     //Timer
