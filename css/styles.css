@@ -309,6 +309,9 @@ background: url(../img/background.jpg) no-repeat;
 	padding: 2em;
 	min-height: 100%;
 }
+.page-inner section:first-child h2 {
+	margin-bottom: 0.4em;
+}
 .page-inner i {
 	cursor: pointer;
 	text-align: center;
