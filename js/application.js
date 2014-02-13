@@ -258,7 +258,7 @@ $(document).ready(function() {
 
     //Timer
 
-
+    $('#click-button').click();
     $('#timeTogether').text('Мы уже вместе' + ruDateString(together("2010-05-15 19:00")));
     $('#timeSinceWedding').text('Мы уже женаты' + ruDateString(together("2013-08-09 10:00")));
     setInterval(function() {
