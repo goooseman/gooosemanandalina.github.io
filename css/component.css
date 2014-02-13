@@ -38,6 +38,9 @@ background-size: cover;
 .open-left #timer, .open-right #timer {
 	display: none;
 }
+.open-left #play-button, .open-right #play-button {
+	display: none;
+}
 .addthis_toolbox {
 	margin-top: 20px;
 }
