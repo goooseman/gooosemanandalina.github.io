@@ -40,7 +40,7 @@
 		}
 		classie.add( splitlayout, 'reset-layout' );
 
-		leftSide.querySelector( 'div.intro-content' ).addEventListener( eventtype, function( ev ) {
+        leftSide.querySelector('div.intro-content').addEventListener(eventtype, function(ev) {
 			reset();
 			classie.add( splitlayout, 'open-left' );
 		} );
