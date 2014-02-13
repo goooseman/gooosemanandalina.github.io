@@ -256,7 +256,7 @@ function ruDateString(dateArray) {
 $(document).ready(function() {
     moment.lang('ru');
 
-    if ($('video').get(0).readyState != 4) {
+    if ($('video').get(0).readyState === 0) {
         alert('Not loaded!');
     }
     $('#play-button').click(function() {
