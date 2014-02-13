@@ -35,6 +35,16 @@ background-size: cover;
 	opacity: 0.6;
 	cursor: pointer;
 }
+#play-overlay {
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	z-index: 99999999999999;
+	position: absolute;
+	display: none;
+	cursor: pointer;
+
+}
 .open-left #timer, .open-right #timer {
 	display: none;
 }

@@ -256,9 +256,16 @@ function ruDateString(dateArray) {
 $(document).ready(function() {
     moment.lang('ru');
 
-    if ($('video').get(0).readyState === 0) {
-        alert('Not loaded!');
+    var iOS = /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
+
+    if (iOS) {
+        $('#play-overlay').show();
+        $('##play-overlay').click(function() {
+            $('video').get(0).play();
+        });
+        $('#play-overlay').hide();
     }
+
     $('#play-button').click(function() {
         var video = $('video').get(0);
         if (video.paused) {
