@@ -260,10 +260,11 @@ $(document).ready(function() {
 
     if (iOS) {
         $('#play-overlay').show();
-        $('##play-overlay').click(function() {
+        $('#play-overlay').click(function() {
             $('video').get(0).play();
+            $('#play-overlay').hide();
         });
-        $('#play-overlay').hide();
+
     }
 
     $('#play-button').click(function() {
