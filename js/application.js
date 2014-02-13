@@ -254,37 +254,53 @@ function ruDateString(dateArray) {
 }
 
 $(document).ready(function() {
-    moment.lang('ru');
+        moment.lang('ru');
 
-    var iOS = /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
+        var iOS = /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
 
-    if (iOS) {
-        $('#play-overlay').show();
-        $('#play-overlay').click(function() {
-            $('video').get(0).play();
-            $('#play-overlay').hide();
+        if (iOS) {
+            $('#play-overlay').show();
+            $('#play-overlay').click(function() {
+                $('video').get(0).play();
+                $('#play-overlay').hide();
+            });
+            $('#play-overlay'
+                ').bind("touchstart", function() {
+            $('
+                video ').get(0).play();
+            $('
+                # play - overlay ').hide();
         });
-
     }
 
-    $('#play-button').click(function() {
-        var video = $('video').get(0);
+    $('
+                # play - button ').click(function() {
+        var video = $('
+                video ').get(0);
         if (video.paused) {
             video.play();
-            $(this).html('<i class="fa fa-pause"></i>');
+            $(this).html(' < i class = "fa fa-pause" > < /i>');
         } else {
             video.pause();
-            $(this).html('<i class="fa fa-play"></i>');
+            $(this).html('<i class="fa fa-play"></i > ');
         }
     });
     //Timer
 
 
-    $('#timeTogether').text('Мы уже вместе' + ruDateString(together("2010-05-15 19:00")));
-    $('#timeSinceWedding').text('Мы уже женаты' + ruDateString(together("2013-08-09 10:00")));
+    $('
+                # timeTogether ').text('Мыужевместе
+                ' + ruDateString(together("2010-05-15 19:00")));
+    $('
+                # timeSinceWedding ').text('Мыужеженаты
+                ' + ruDateString(together("2013-08-09 10:00")));
     setInterval(function() {
-        $('#timeTogether').text('Мы уже вместе' + ruDateString(together("2010-05-15 19:00")));
-        $('#timeSinceWedding').text('Мы уже женаты' + ruDateString(together("2013-08-09 10:00")));
+        $('
+                # timeTogether ').text('Мыужевместе
+                ' + ruDateString(together("2010-05-15 19:00")));
+        $('
+                # timeSinceWedding ').text('Мыужеженаты
+                ' + ruDateString(together("2013-08-09 10:00")));
 
     }, 1000);
 
