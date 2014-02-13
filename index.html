@@ -19,7 +19,7 @@
 		<script src="js/application.js"></script>
 	</head>
 	<body>
-		<video autoplay loop poster="background.jpg" id="bgvid">
+		<video autoplay loop poster="none" id="bgvid">
 			<source src="videos/background.webm" type="video/webm">
 			<source src="videos/background.mp4" type="video/mp4">
 		</video>
@@ -28,6 +28,8 @@
 				<div class="intro">
 					<div id="timer">
 						<div id="timer-overlay">
+													<input type="button" value="Play" onclick="$('video').get(0).play();">
+
 							<h1 id="timeTogether"></h1>
 						  <h1 id="timeSinceWedding"></h1>
 						</div>
