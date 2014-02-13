@@ -318,7 +318,9 @@ background: url(../img/background.jpg) no-repeat;
 	border: 1px outset rgba(128, 128, 128, 0.5);
 	padding: 4px;
 	width: 37px;
+	margin-top: 5px;
 }
+
 .page-inner section {
 	padding-bottom: 1em;
 }
