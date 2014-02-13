@@ -256,9 +256,20 @@ function ruDateString(dateArray) {
 $(document).ready(function() {
     moment.lang('ru');
 
+
+    $('#play-button').click(function() {
+        var video = $('video').get(0);
+        if (video.paused) {
+            video.play();
+            $(this).text("Pause");
+        } else {
+            video.pause();
+            $(this).text("Play");
+        }
+    });
     //Timer
 
-    $('#click-button').click();
+
     $('#timeTogether').text('Мы уже вместе' + ruDateString(together("2010-05-15 19:00")));
     $('#timeSinceWedding').text('Мы уже женаты' + ruDateString(together("2013-08-09 10:00")));
     setInterval(function() {
