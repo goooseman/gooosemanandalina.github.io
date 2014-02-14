@@ -256,6 +256,9 @@ function ruDateString(dateArray) {
 $(document).ready(function() {
     moment.lang('ru');
 
+    var userLang = navigator.language || navigator.userLanguage;
+    alert("The language is: " + userLang);
+
     var iOS = /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
 
     if (iOS) {
