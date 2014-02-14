@@ -45,6 +45,12 @@ background: url(../img/background.jpg) no-repeat;
   background-attachment: fixed;
 
 }
+.flag {
+	position: absolute;
+	z-index: 99999;
+	top: 10px;
+	right: 10px;
+}
 #play-button {
 	position: fixed;
 	right: 20px;
@@ -79,6 +85,9 @@ background: url(../img/background.jpg) no-repeat;
 	display: none;
 }
 .open-left #play-button, .open-right #play-button {
+	display: none;
+}
+.open-left .flag, .open-right .flag {
 	display: none;
 }
 .addthis_toolbox {
